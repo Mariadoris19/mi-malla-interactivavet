@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Interactiva Veterinaria</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Malla Interactiva Medicina Veterinaria 🐾</h1>
+  <div class="timeline">
+
+    <!-- Primer Año -->
+    <section>
+      <h2>1° Año - 1° Semestre</h2>
+      <div class="semester">
+        <button class="ramo" data-id="estrategia">Estrategia para el aprendizaje</button>
+        <button class="ramo" data-id="biologia" data-prerreq="">Biología Celular</button>
+        <button class="ramo" data-id="matematicas">Matemáticas</button>
+        <button class="ramo" data-id="quimica">Química</button>
+        <button class="ramo" data-id="orientacion">Orientación Profesional</button>
+        <button class="ramo" data-id="fisica">Física Médica</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>1° Año - 2° Semestre</h2>
+      <div class="semester">
+        <button class="ramo" data-id="bioquimica" data-prerreq="biologia,quimica">Bioquímica</button>
+        <button class="ramo" data-id="histologia" data-prerreq="biologia">Histología</button>
+        <button class="ramo" data-id="bienestar" data-prerreq="orientacion">Bienestar Animal</button>
+        <button class="ramo" data-id="zoologia">Zoología Veterinaria</button>
+        <button class="ramo" data-id="anatomia1" data-prerreq="biologia">Anatomía Veterinaria I</button>
+        <button class="ramo" data-id="ingles1">Inglés I</button>
+      </div>
+    </section>
+
+    <!-- Y así seguimos con los otros años y semestres -->
+    <!-- El resto te lo paso en el siguiente mensaje porque es muy largo -->
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- Segundo Año -->
+    <section>
+      <h2>2° Año - 3° Semestre</h2>
+      <div class="semester">
+        <button class="ramo" data-id="antropologia">Antropología</button>
+        <button class="ramo" data-id="ecologia" data-prerreq="zoologia">Ecología</button>
+        <button class="ramo" data-id="fisiologia" data-prerreq="bioquimica,bienestar,anatomia1">Fisiología Animal</button>
+        <button class="ramo" data-id="anatomia2" data-prerreq="anatomia1">Anatomía Veterinaria II</button>
+        <button class="ramo" data-id="microbiologia" data-prerreq="bioquimica">Microbiología General</button>
+        <button class="ramo" data-id="inmunologia" data-prerreq="histologia,bienestar">Inmunología Veterinaria</button>
+        <button class="ramo" data-id="genetica">Genética Ganadera</button>
+        <button class="ramo" data-id="ingles2" data-prerreq="ingles1">Inglés II</button>
+        <button class="ramo" data-id="pasantia1" data-prerreq="estrategia,biologia,matematicas,quimica,orientacion,fisica,bioquimica,histologia,bienestar,zoologia,anatomia1,ingles1">Pasantía Intrahospitalaria I</button>
+        <button class="ramo" data-id="pasantia2" data-prerreq="pasantia1">Pasantía Intrahospitalaria II</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>2° Año - 4° Semestre</h2>
+      <div class="semester">
+        <button class="ramo" data-id="etica" data-prerreq="antropologia">Ética</button>
+        <button class="ramo" data-id="forrajes" data-prerreq="ecologia">Producción de Forrajes</button>
+        <button class="ramo" data-id="fisioanimal" data-prerreq="fisiologia,inmunologia,anatomia2">Fisiopatología Animal</button>
+        <button class="ramo" data-id="reproduccion" data-prerreq="fisiologia,anatomia2">Reproducción Animal</button>
+        <button class="ramo" data-id="parasitos">Enfermedades Parasitarias</button>
+        <button class="ramo" data-id="infecciosas" data-prerreq="microbiologia,inmunologia">Enfermedades Infecciosas</button>
+        <button class="ramo" data-id="patogeneral" data-prerreq="anatomia2">Patología General</button>
+        <button class="ramo" data-id="pasantia3" data-prerreq="pasantia2">Pasantía Intrahospitalaria III</button>
+        <button class="ramo" data-id="pasantia4" data-prerreq="pasantia3">Pasantía Intrahospitalaria IV</button>
+      </div>
+    </section>
+
+    <!-- Tercer Año -->
+    <section>
+      <h2>3° Año - 5° Semestre</h2>
+      <div class="semester">
+        <button class="ramo" data-id="electivo1" data-prerreq="etica">Electivo Formación Integral</button>
+        <button class="ramo" data-id="nutricion" data-prerreq="forrajes">Nutrición y Alimentación Animal</button>
+        <button class="ramo" data-id="patosistemas" data-prerreq="patogeneral">Patología Especial de Sistemas</button>
+        <button class="ramo" data-id="farma1" data-prerreq="fisioanimal,infecciosas">Farmacología Veterinaria I</button>
+        <button class="ramo" data-id="andrologia" data-prerreq="reproduccion">Andrología</button>
+        <button class="ramo" data-id="produccioncarne" data-prerreq="bienestar,genetica,forrajes,reproduccion">Sistema de Producción de Carne</button>
+        <button class="ramo" data-id="economia" data-prerreq="
+          <!-- Cuarto Año -->
+    <section>
+      <h2>4° Año - 7° Semestre</h2>
+      <div class="semester">
+        <button class="ramo" data-id="cirugiespecial" data-prerreq="cirugiageneral">Cirugía Especial</button>
+        <button class="ramo" data-id="exploracion" data-prerreq="ginecologia">Exploración Clínica de los Animales</button>
+        <button class="ramo" data-id="estadistica" data-prerreq="contabilidad">Análisis Estadístico</button>
+        <button class="ramo" data-id="peces" data-prerreq="reproduccion">Sistema de Producción de Peces</button>
+        <button class="ramo" data-id="teleche" data-prerreq="tecarnes,produccionleche">Tecnología de la Leche</button>
+        <button class="ramo" data-id="silvestres" data-prerreq="ecologia">Conservación de la Vida Silvestre</button>
+        <button class="ramo" data-id="pasantia9" data-prerreq="pasantia8">Pasantía Intrahospitalaria IX</button>
+        <button class="ramo" data-id="pasantia10" data-prerreq="pasantia9">Pasantía Intrahospitalaria X</button>
+        <button class="ramo" data-id="tav2" data-prerreq="teleche">TAV II</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>4° Año - 8° Semestre</h2>
+      <div class="semester">
+        <button class="ramo" data-id="toxicologia" data-prerreq="teleche">Toxicología Veterinaria</button>
+        <button class="ramo" data-id="metodos" data-prerreq="exploracion">Métodos Complementarios de Diagnóstico</button>
+        <button class="ramo" data-id="medicinainterna" data-prerreq="exploracion,cirugiespecial">Medicina Interna</button>
+        <button class="ramo" data-id="metodologia">Metodología de la Investigación Científica</button>
+        <button class="ramo" data-id="epidemiologia" data-prerreq="estadistica">Epidemiología y Salud Pública</button>
+        <button class="ramo" data-id="proyectos" data-prerreq="contabilidad">Formulación y Evaluación de Proyectos</button>
+        <button class="ramo" data-id="pasantia11" data-prerreq="pasantia10">Pasantía Intrahospitalaria XI</button>
+        <button class="ramo" data-id="pasantia12" data-prerreq="pasantia10">Pasantía Intrahospitalaria XII</button>
+        <button class="ramo" data-id="tav3" data-prerreq="medicinainterna">TAV III</button>
+      </div>
+    </section>
+
+    <!-- Quinto Año -->
+    <section>
+      <h2>5° Año - 9° Semestre</h2>
+      <div class="semester">
+        <button class="ramo" data-id="silvestresclinic" data-prerreq="toxicologia,metodos,medicinainterna">Clínica de Animales Silvestres y Exóticos</button>
+        <button class="ramo" data-id="equinosrumiantes" data-prerreq="toxicologia,metodos,medicinainterna">Clínica de Equinos y Rumiantes</button>
+        <button class="ramo" data-id="companias" data-prerreq="toxicologia,metodos,medicinainterna">Clínica de Animales de Compañía</button>
+        <button class="ramo" data-id="legislacion" data-prerreq="epidemiologia">Legislación y Deontología</button>
+        <button class="ramo" data-id="memoria" data-prerreq="pasantia12">Memoria de Título</button>
+        <button class="ramo" data-id="inocuidad" data-prerreq="teleche,epidemiologia">Inocuidad de los Alimentos</button>
+        <button class="ramo" data-id="pasantia13" data-prerreq="pasantia12">Pasantía Intrahospitalaria XIII</button>
+        <button class="ramo" data-id="pasantia14" data-prerreq="pasantia13">Pasantía Intrahospitalaria XIV</button>
+        <button class="ramo" data-id="turno1" data-prerreq="medicinainterna">Turno Hospitalario I</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>5° Año - 10° Semestre</h2>
+      <div class="semester">
+        <button class="ramo" data-id="electivo2">Electivo II</button>
+        <button class="ramo" data-id="electivo3">Electivo III</button>
+        <button class="ramo" data-id="internado">Internado</button>
+        <button class="ramo" data-id="turno2" data-prerreq="turno1">Turno Hospitalario II</button>
+      </div>
+    </section>
+    </div> <!-- cierre de timeline -->
+  <script src="script.js"></script>
+</body>
+</html>
