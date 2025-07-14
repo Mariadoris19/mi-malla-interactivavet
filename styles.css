@@ -67,3 +67,19 @@ button.ramo.bloqueado {
   cursor: not-allowed;
   pointer-events: none;
 }
+.reset-btn {
+  display: block;
+  margin: 0 auto 1.5rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: #005f99;
+}
