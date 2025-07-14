@@ -43,3 +43,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   actualizarEstado();
 });
+const resetBtn = document.getElementById("resetBtn");
+
+resetBtn.addEventListener("click", () => {
+  Object.values(estadoRamos).forEach(({ boton, aprobado }) => {
+    boton.classList.remove("aprobado");
+    estadoRamos[boton.dataset.id].aprobado = false;
+    // Bloqueamos todos los que tienen prerequisitos
+    if (boton.dataset.prerreq && boton.dataset.prerreq.length > 0) {
+      boton.classList.add("bloqueado");
+    } else {
+      boton.classList.remove("bloqueado");
+    }
+  });
+});
