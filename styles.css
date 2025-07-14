@@ -83,3 +83,47 @@ button.ramo.bloqueado {
 .reset-btn:hover {
   background-color: #005f99;
 }
+/* 🌙 Estilo oscuro automático si el sistema está en modo dark */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #eeeeee;
+  }
+
+  h1, h2 {
+    color: #80d8ff;
+  }
+
+  section {
+    background: #1e1e1e;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+  }
+
+  button.ramo {
+    background-color: #3949ab;
+    color: white;
+  }
+
+  button.ramo:hover {
+    background-color: #5c6bc0;
+  }
+
+  button.ramo.aprobado {
+    background-color: #66bb6a;
+    color: #e8f5e9;
+  }
+
+  button.ramo.bloqueado {
+    background-color: #555;
+    color: #999;
+  }
+
+  .reset-btn {
+    background-color: #2196f3;
+    color: white;
+  }
+
+  .reset-btn:hover {
+    background-color: #1565c0;
+  }
+}
